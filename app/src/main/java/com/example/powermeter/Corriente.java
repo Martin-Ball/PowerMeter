@@ -3,7 +3,6 @@ package com.example.powermeter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -40,8 +39,12 @@ public class Corriente extends AppCompatActivity {
 
         //habilitar flecha hacia atras toolbar
 
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+        });
 
         //gauge
 
@@ -91,16 +94,12 @@ public class Corriente extends AppCompatActivity {
 
 
         //redireccion a main activity
-        FloatingActionButton fab4 = findViewById(R.id.fab4);
-        fab4.setOnClickListener(new View.OnClickListener() {
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
-
-        });
-    }
+        });    }
 
     private void setValorAguja(float valoragujacorr, TextView estadocorr, GaugeView gaugeViewCorr) {
         if (valoragujacorr < 10)

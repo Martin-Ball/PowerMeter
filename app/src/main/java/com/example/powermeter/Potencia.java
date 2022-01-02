@@ -53,7 +53,12 @@ public class Potencia extends AppCompatActivity {
 
         //listener de flecha hacia atras
 
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+        });
 
         // Defino textview para hora, dia, mes
         pot_cons_hora = (TextView) findViewById(R.id.potxHora);

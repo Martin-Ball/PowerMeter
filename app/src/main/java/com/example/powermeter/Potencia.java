@@ -2,9 +2,10 @@ package com.example.powermeter;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -52,16 +53,7 @@ public class Potencia extends AppCompatActivity {
 
         //listener de flecha hacia atras
 
-        FloatingActionButton fab2 = findViewById(R.id.fab2);
-        fab2.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                //redireccion a main activity
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            }
-
-        });
 
         // Defino textview para hora, dia, mes
         pot_cons_hora = (TextView) findViewById(R.id.potxHora);
@@ -219,8 +211,8 @@ public class Potencia extends AppCompatActivity {
         graphMes.getViewport().setScalable(true);
 
         arregloMes.setDrawBackground(true);
-        arregloMes.setBackgroundColor(getColor(R.color.colorGraficas));
-        arregloMes.setColor(getColor(R.color.colorLineas));
+        arregloMes.setBackgroundColor(R.color.colorGraficas);
+        arregloMes.setColor(R.color.colorLineas);
         arregloMes.setDrawDataPoints(true);
     }
 
@@ -235,12 +227,12 @@ public class Potencia extends AppCompatActivity {
         graphDia.getViewport().setScalable(true);
 
         arregloDia.setDrawBackground(true);
-        arregloDia.setBackgroundColor(getColor(R.color.colorGraficas));
-        arregloDia.setColor(getColor(R.color.colorLineas));
+        arregloDia.setBackgroundColor(R.color.colorGraficas);
+        arregloDia.setColor(R.color.colorLineas);
         arregloDia.setDrawDataPoints(true);
     }
 
-    private void configGraphHora(LineGraphSeries<DataPoint> arregloHora, GraphView graphHora, int max) {
+    public void configGraphHora(LineGraphSeries<DataPoint> arregloHora, GraphView graphHora, int max) {
         // Seteo valor maximo en eje x
         graphHora.getViewport().setXAxisBoundsManual(true);
         graphHora.getViewport().setMinX(0);
@@ -251,8 +243,8 @@ public class Potencia extends AppCompatActivity {
 
 
         arregloHora.setDrawBackground(true);
-        arregloHora.setBackgroundColor(getColor(R.color.colorGraficas));
-        arregloHora.setColor(getColor(R.color.colorLineas));
+        arregloHora.setBackgroundColor(R.color.colorGraficas);
+        arregloHora.setColor(R.color.colorLineas);
         arregloHora.setDrawDataPoints(true);
     }
 }

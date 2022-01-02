@@ -211,8 +211,8 @@ public class Potencia extends AppCompatActivity {
         graphMes.getViewport().setScalable(true);
 
         arregloMes.setDrawBackground(true);
-        arregloMes.setBackgroundColor(R.color.colorGraficas);
-        arregloMes.setColor(R.color.colorLineas);
+        arregloMes.setBackgroundColor(Color.parseColor("#C7CEEA"));
+        arregloMes.setColor(Color.parseColor("#6969EA"));
         arregloMes.setDrawDataPoints(true);
     }
 
@@ -227,8 +227,8 @@ public class Potencia extends AppCompatActivity {
         graphDia.getViewport().setScalable(true);
 
         arregloDia.setDrawBackground(true);
-        arregloDia.setBackgroundColor(R.color.colorGraficas);
-        arregloDia.setColor(R.color.colorLineas);
+        arregloDia.setBackgroundColor(Color.parseColor("#C7CEEA"));
+        arregloDia.setColor(Color.parseColor("#6969EA"));
         arregloDia.setDrawDataPoints(true);
     }
 
@@ -243,8 +243,8 @@ public class Potencia extends AppCompatActivity {
 
 
         arregloHora.setDrawBackground(true);
-        arregloHora.setBackgroundColor(R.color.colorGraficas);
-        arregloHora.setColor(R.color.colorLineas);
+        arregloHora.setBackgroundColor(Color.parseColor("#C7CEEA"));
+        arregloHora.setColor(Color.parseColor("#6969EA"));
         arregloHora.setDrawDataPoints(true);
     }
 }

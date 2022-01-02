@@ -3,8 +3,6 @@ package com.example.powermeter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -51,21 +49,11 @@ public class Costos extends AppCompatActivity {
 
         //redireccion a main activity
 
-        FloatingActionButton fab2 = findViewById(R.id.fab5);
-        fab2.setOnClickListener(new View.OnClickListener() {
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
-
-        /*FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }*/
         });
 
         Calendar mes = Calendar.getInstance();

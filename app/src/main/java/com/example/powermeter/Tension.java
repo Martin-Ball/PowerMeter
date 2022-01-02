@@ -3,7 +3,6 @@ package com.example.powermeter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -95,14 +94,11 @@ public class Tension extends AppCompatActivity {
 
         //redireccion a main activity
 
-        FloatingActionButton fab2 = findViewById(R.id.fab3);
-        fab2.setOnClickListener(new View.OnClickListener() {
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
-
         });
     }
 

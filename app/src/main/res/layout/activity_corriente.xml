@@ -16,18 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/ic_launcher_background"
-            app:popupTheme="@style/AppTheme" />
+            app:popupTheme="@style/AppTheme"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
 
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_corriente" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:backgroundTint="@color/ic_launcher_background"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 </android.support.design.widget.CoordinatorLayout>

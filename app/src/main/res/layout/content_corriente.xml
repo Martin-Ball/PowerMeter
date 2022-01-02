@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Corriente"
+    tools:showIn="@layout/activity_corriente">
+
+    <TextView
+        android:id="@+id/textocorriente"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:foregroundGravity="center_horizontal"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/estadocorr"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:foregroundGravity="center_horizontal"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="53dp" />
+
+    <com.ntt.customgaugeview.library.GaugeView
+        android:id="@+id/gauge_view"
+        android:layout_width="wrap_content"
+        android:layout_height="336dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="center_horizontal"
+        gauge:divisions="8"
+        gauge:rangeValues="@array/AmperValues"
+        gauge:scaleEndValue="300"
+        gauge:showInnerRim="false"
+        gauge:showNeedle="true"
+        gauge:showOuterBorder="false"
+        gauge:showOuterRim="true"
+        gauge:showOuterShadow="false"
+        gauge:showRangeText="true"
+        gauge:showRanges="true"
+        gauge:showScale="true"
+        gauge:subdivisions="1"
+        gauge:textUnit="Amper"
+        gauge:textUnitSize="0.06"
+        gauge:textValueSize="0.15" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "285998724140",
+    "firebase_url": "https://power-meter-5346f.firebaseio.com",
+    "project_id": "power-meter-5346f",
+    "storage_bucket": "power-meter-5346f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285998724140:android:1ba9f9112e42d5c5ff8d89",
+        "android_client_info": {
+          "package_name": "com.example.powermeter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285998724140-gi9r3h3jmuseiu2le6euig9dcnkglijo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.powermeter",
+            "certificate_hash": "f722ebb764cb80ce273a74adc8683ca1710397bd"
+          }
+        },
+        {
+          "client_id": "285998724140-vntq6ab0ha0ggslko19j7r5fbkevg0ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5ti1rWYkY7daJntyAAU8CwJ1LYVtwGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285998724140-vntq6ab0ha0ggslko19j7r5fbkevg0ms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

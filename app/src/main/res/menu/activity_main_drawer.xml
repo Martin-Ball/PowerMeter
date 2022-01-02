@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Potencia"
+            android:icon="@drawable/ic_vatimeter"
+            android:title="Potencia" />
+        <item
+            android:id="@+id/Tensión"
+            android:icon="@drawable/ic_voltimeter"
+            android:title="Tensión" />
+        <item
+            android:id="@+id/Corriente"
+            android:icon="@drawable/ic_amperimeter"
+            android:title="Corriente" />
+
+        <item
+            android:id="@+id/Costos"
+            android:icon="@drawable/ic_cost"
+            android:title="Costos" />
+
+    </group>
+
+</menu>

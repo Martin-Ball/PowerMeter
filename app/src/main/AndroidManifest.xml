@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.powermeter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_electricity_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Costos"
+            android:label="@string/title_activity_costos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Corriente"
+            android:label="@string/title_activity_corriente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Potencia"
+            android:label="@string/title_activity_potencia"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Tension"
+            android:label="@string/title_activity_tension"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -21,7 +21,7 @@ La busqueda de cada seccion de la app fue sectorizar la informacion obtenida. Te
 <img src="https://scontent.fros2-2.fna.fbcdn.net/v/t39.30808-6/270182571_10209803551761403_6215383156601789411_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=jlLTz9EpRSkAX-3Al3_&_nc_ht=scontent.fros2-2.fna&oh=00_AT_nhK-4ibSBxB00MWr-eG1-HLxC3AO7TlEWcVvSJ0X1AA&oe=61D712C5" data-canonical-src="https://scontent.fros2-2.fna.fbcdn.net/v/t39.30808-6/270182571_10209803551761403_6215383156601789411_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=jlLTz9EpRSkAX-3Al3_&_nc_ht=scontent.fros2-2.fna&oh=00_AT_nhK-4ibSBxB00MWr-eG1-HLxC3AO7TlEWcVvSJ0X1AA&oe=61D712C5" width="200" height="400" />
 </p>
 
-![PowerMeterIMG7]()
+![PowerMeterIMG7](PowerMeter/WhatsApp Video 2022-01-02 at 19.53.gif)
 
 
 > Electrónica
